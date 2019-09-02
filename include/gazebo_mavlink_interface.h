@@ -107,7 +107,7 @@ static const std::string kDefaultMotorVelocityReferencePubTopic = "/gazebo/comma
 static const std::string kDefaultImuTopic = "/imu";
 static const std::string kDefaultLidarTopic = "/link/lidar";
 static const std::string kDefaultOpticalFlowTopic = "/px4flow/link/opticalFlow";
-static const std::string kDefaultSonarTopic = "/sonar_model/link/sonar";
+static const std::string kDefaultSonarTopic = "/link/sonar";
 static const std::string kDefaultIRLockTopic = "/camera/link/irlock";
 static const std::string kDefaultGPSTopic = "/gps";
 static const std::string kDefaultVisionTopic = "/vision_odom";
@@ -262,6 +262,16 @@ private:
   void handle_control(double _dt);
   bool IsRunning();
   void onSigInt();
+
+  /**
+   * @brief Set the MAV_SENSOR_ORIENTATION enum value based on the sensor orientation
+   *
+   * @param[in] rootModel		The root model where the sensor is attached
+   * @param[in] u_Xs				Unit vector of X-axis sensor in `base_link` frame
+   * @param[in] sensor_msg	The Mavlink DISTANCE_SENSOR message struct
+   */
+  template <class T>
+  void setMavlinkSensorOrientation(const ignition::math::Vector3d& u_Xs, T& sensor_msg);
 
   // Serial interface
   void open();
