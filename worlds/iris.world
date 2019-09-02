@@ -49,5 +49,16 @@
         </track_visual> -->
       </camera>
     </gui>
+    <model name="tower">
+      <pose>0 0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file://../models/tower.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
   </world>
 </sdf>
