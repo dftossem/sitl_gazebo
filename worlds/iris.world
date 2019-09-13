@@ -15,7 +15,7 @@
     </include>
     <include>
       <uri>model://iris</uri>
-      <pose>20 20 0.83 0 0 1.14</pose>
+      <pose>15 20 0.83 0 0 1.57079</pose>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
@@ -40,8 +40,8 @@
     </physics>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-10 0 6 0 0.3 0</pose>
-        <!-- <view_controller>orbit</view_controller>
+        <!-- <pose>-10 0 6 0 0.3 0</pose>
+        <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
         <track_visual>
           <name>iris</name>
