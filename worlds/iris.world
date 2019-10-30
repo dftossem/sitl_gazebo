@@ -55,7 +55,7 @@
       <link name="body">
         <visual name="visual">
           <geometry>
-            <mesh><uri>model://rotors_description/meshes/tower.dae</uri></mesh>
+            <mesh><uri>model://rotors_description/meshes/towers_cables_1.dae</uri></mesh>
           </geometry>
         </visual>
       </link>
