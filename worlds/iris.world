@@ -15,7 +15,7 @@
     </include>
     <include>
       <uri>model://iris</uri>
-      <pose>1.01 0.98 0.83 0 0 1.14</pose>
+      <pose>15 20 0.83 0 0 1.57079</pose>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
@@ -40,8 +40,8 @@
     </physics>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-10 0 6 0 0.3 0</pose>
-        <!-- <view_controller>orbit</view_controller>
+        <!-- <pose>-10 0 6 0 0.3 0</pose>
+        <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
         <track_visual>
           <name>iris</name>
@@ -49,5 +49,16 @@
         </track_visual> -->
       </camera>
     </gui>
+    <model name="tower">
+      <pose>0 0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://rotors_description/meshes/tower.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
   </world>
 </sdf>

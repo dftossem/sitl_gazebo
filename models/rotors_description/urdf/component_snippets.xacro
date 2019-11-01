@@ -66,7 +66,7 @@
     <joint name="${namespace}/camera_${camera_suffix}_joint" type="fixed">
       <xacro:insert_block name="origin" />
       <parent link="${parent_link}" />
-      <child link="${namespace}/camera_${camera_suffix}_link" />
+      <child link="/camera_${camera_suffix}_link" />
     </joint>
     <gazebo reference="${namespace}/camera_${camera_suffix}_link">
       <sensor type="camera" name="${namespace}_camera_${camera_suffix}">
@@ -99,12 +99,12 @@
           <imageTopicName>image_raw</imageTopicName>
           <cameraInfoTopicName>camera_info</cameraInfoTopicName>
           <frameName>camera_${camera_suffix}_link</frameName>
-          <hackBaseline>0.0</hackBaseline>
+          <hackBaseline>0.19</hackBaseline>
           <distortionK1>0.0</distortionK1>
-          <distortionK2>0.0</distortionK2>
-          <distortionK3>0.0</distortionK3>
-          <distortionT1>0.0</distortionT1>
-          <distortionT2>0.0</distortionT2>
+          <distortionK2>0.272060548765299</distortionK2>
+          <distortionK3>-0.4510090027068866</distortionK3>
+          <distortionT1>0.001047801344634938</distortionT1>
+          <distortionT2>0.003251669895195926</distortionT2>
         </plugin>
       </sensor>
     </gazebo>
