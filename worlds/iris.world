@@ -15,7 +15,7 @@
     </include>
     <include>
       <uri>model://iris</uri>
-      <pose>15 -50 0.83 0 0 1.57079</pose>
+      <pose>-30 80.0 0.83 0 0 -1.57079</pose>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
@@ -49,8 +49,9 @@
         </track_visual> -->
       </camera>
     </gui>
+    <!-- Distance between towers in x: 60.5-->
     <model name="tower_1">
-      <pose>0 30.9 0  0 0 0</pose>
+      <pose>0 90.0  0 0 0</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
@@ -61,12 +62,23 @@
       </link>
     </model>
     <model name="tower_2">
-      <pose>0 -30.9 0  0 0 0</pose>
+      <pose>0 29.5 0  0 0 0</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
           <geometry>
             <mesh><uri>model://rotors_description/meshes/tower_cables.dae</uri></mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+    <model name="tower_3">
+      <pose>0 -31.0 0  0 0 0</pose>
+      <static>true</static>
+      <link name="body">
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>model://rotors_description/meshes/tower_cables_diagonal.dae</uri></mesh>
           </geometry>
         </visual>
       </link>
