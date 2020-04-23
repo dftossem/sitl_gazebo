@@ -89,8 +89,8 @@
         </visual>
       </link>
     </model>
-    <model name="fence_square_top">
-      <pose>29.43 89.8 0 0 0 0</pose>
+    <model name="fence_square_bottom">
+      <pose>29.43 -31.2 0 0 0 0</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
@@ -103,7 +103,7 @@
       </link>
     </model>
     <model name="fence_long_0">
-      <pose>45.81 75.17 0 0 0 0.7853</pose>
+      <pose>67.49 -33.51 0 0 0 2.3561</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
@@ -116,7 +116,7 @@
       </link>
     </model>
     <model name="fence_long_1">
-      <pose>15.31 44.68 0 0 0 0.7853</pose>
+      <pose>37.01 -3.03 0 0 0 2.3561</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
@@ -129,7 +129,7 @@
       </link>
     </model>
     <model name="fence_long_2">
-      <pose>0 7.74 0 0 0 -1.5707</pose>
+      <pose>21.8 76.9 0 0 0 1.5707</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
@@ -142,20 +142,7 @@
       </link>
     </model>
     <model name="fence_long_3">
-      <pose>0 -35.38 0 0 0 -1.5707</pose>
-      <static>true</static>
-      <link name="body">
-        <visual name="visual">
-          <geometry>
-            <mesh>
-              <uri>model://rotors_description/meshes/fence_long.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-      </link>
-    </model>
-    <model name="fence_long_4">
-      <pose>0 -78.5 0 0 0 -1.5707</pose>
+      <pose>21.8 33.78 0 0 0 1.5707</pose>
       <static>true</static>
       <link name="body">
         <visual name="visual">
@@ -168,7 +155,7 @@
       </link>
     </model>
     <road name="my_road">
-      <width>16</width>
+      <width>20</width>
       <point>-40 -100 0.1</point>
       <point>-40 100 0.1</point>
     </road>
