@@ -1,6 +1,13 @@
 <?xml version="1.0" ?>
 <sdf version="1.5">
   <world name="default">
+    <scene>
+      <ambient></ambient>
+      <background></background>
+      <shadows>0</shadows>
+      <grid>0</grid>
+      <origin_visual>0</origin_visual>
+    </scene>
     <!-- A global light source -->
     <include>
       <uri>model://sun</uri>
@@ -15,7 +22,7 @@
     </include>
     <include>
       <uri>model://iris</uri>
-      <pose>-20 80.0 0.83 0 0 1.57079</pose>
+      <pose>0 80.0 0.83 0 0 1.57079</pose>
     </include>
     <physics name='default_physics' default='0' type='ode'>
       <gravity>0 0 -9.8066</gravity>
@@ -83,7 +90,7 @@
         <visual name="visual">
           <geometry>
             <mesh>
-              <uri>model://rotors_description/meshes/tower_cables_diagonal.dae</uri>
+              <uri>model://rotors_description/meshes/tower_cables.dae</uri>
             </mesh>
           </geometry>
         </visual>
